@@ -1,25 +1,39 @@
 #!/usr/bin/ruby
 
 # Log List file path
-log = "/Users/rich/GitHub/log-investigation/logfile.log"
-report = "/Users/rich/GitHub/log-investigation/report.txt"
-time_regex = ""
+report = "/Users/rich/GitHub/log-investigator/report.txt"
 
-#Add contents of each line in log as an element in the array logsArray
-f = File.open("#{log}" , "r")
-f.each_line { |line| 
-puts "#{line}"
-
-# if line is a date
-if line == "2016-*"
-# add line to log report
-	puts "This is a date"
-	puts "#{line}"
-else 
-	#put into array and count
-	puts "this is a log entry"
+# Second Approach
+c = 0
+d = "0"
+# Variables
+file = "/Users/rich/GitHub/log-investigator/logfile.log"
+#date and count
+File.readlines(file).each { |l|
+  #puts l
+#If line is a date and there is no count
+	if l.start_with?("2")
+		#format log date
+		ld = l.sub(/ (\d{2}):(\d{2}):(\d{2})/,'')
+		if ld != d
+			d = ld
+			# Record log date
+			puts d
+			#reset the counter
+			c = 0
+			puts "counter is now reset"
+		else
+			c += 1
+		end
+		#record count
+		if c != 0
+			puts c
+		end
+	else
+		c += 1
+		puts c
 end
 }
 
-#regex
-/
+
+# write to a file
