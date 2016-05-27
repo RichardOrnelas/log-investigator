@@ -11,8 +11,6 @@
 File.readlines(@path).each { |l|
   @log.push l.chomp
 }
-# test
-puts "#{@log}"
 
 # Define Date & Count Method
 def updateReport(key,value)
@@ -52,5 +50,4 @@ end
 
 #update last value
 updateReport(@currDate, @count)
-
 @report.each {|key, value| print "#{key} - #{value}\n"}
