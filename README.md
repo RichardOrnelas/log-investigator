@@ -10,25 +10,26 @@ produce the date and count of entries for each day using Ruby.
 
 You have a log file that looks like the following:
 
-> 2016-04-16 05:23:52
-> |845| some log entry content
-> |815| some log entry content
-> |842| some log entry content
-> 2016-04-16 05:24:52
-> |845| some log entry content
-> |835| some log entry content
-> |851| some log entry content
-> |745| some log entry content
-> 2016-04-18 05:23:52
-> |845| some log entry content
-> |815| some log entry content
-> 2016-04-20 05:23:52
-> |845| some log entry content
-> |815| some log entry content
-> |845| some log entry content
-> |815| some log entry content
+> 2016-04-16 05:23:52 <br \>
+> |845| some log entry content <br \>
+> |815| some log entry content <br \>
+> |842| some log entry content <br \>
+> 2016-04-16 05:24:52 <br \>
+> |845| some log entry content <br \>
+> |835| some log entry content <br \>
+> |851| some log entry content <br \>
+> |745| some log entry content <br \>
+> 2016-04-18 05:23:52 <br \>
+> |845| some log entry content <br \>
+> |815| some log entry content <br \>
+> 2016-04-20 05:23:52 <br \>
+> |845| some log entry content <br \>
+> |815| some log entry content <br \>
+> |845| some log entry content <br \>
+> |815| some log entry content <br \>
+
 ### Example Output
 
-> 2016-04-16 - 7
-> 2016-04-18 - 2
-> 2016-04-20 - 4
+> 2016-04-16 - 7 <br \>
+> 2016-04-18 - 2 <br \>
+> 2016-04-20 - 4 <br \>
