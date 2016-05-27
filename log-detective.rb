@@ -1,6 +1,6 @@
 #!/usr/bin/ruby
 # Define Variables
-@path = "/Users/rich/GitHub/log-investigator/logfile.log"
+@path = "/log-investigator/logfile.log"
 @report = Hash.new
 @count = 0
 @currDate = nil
